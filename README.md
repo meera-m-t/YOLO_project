@@ -28,3 +28,14 @@ We partition the dataset into train, validation, and test sets containing 80%, 1
 ```bash
 unzip TRAIN-VAL-TEST.zip
 ```
+
+## Set up the yolov5 code
+recommend you create a new conda  environment to run your YOLO v5 experiments as to not mess up dependencies of any existing project. 
+```bash
+git clone https://github.com/ultralytics/yolov5
+cd yolov5
+pip install -r requirements.txt
+```
+
+
+
