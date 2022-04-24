@@ -9,7 +9,7 @@ unzip Datasets.zip
 unzip Sample200by200.zip
 ```
 
-follow the instructions in ``geography.ipynb ``. Eventually, you will get the folder named ``culvert-dataset`` that contains two folders ``images`` and ``annotations``, as follows 
+Follow the instructions in ``geography.ipynb ``. Eventually, you will get the folder named ``culvert-dataset`` that contains two folders ``images`` and ``annotations``, as follows 
 
 ```bash
 unzip culvert-dataset.zip
