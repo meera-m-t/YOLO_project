@@ -17,7 +17,7 @@ unzip culvert-dataset.zip
 
 
 ## Convert the Annotations into the YOLO v5 Format
- we convert annotations into the format expected by YOLO v5. There are a variety of formats when it comes to annotations for object detection datasets. Annotations for our dataset follow the PASCAL VOC XML format, which is a very popular format. 
+ We convert annotations into the format expected by YOLO v5. There are a variety of formats when it comes to annotations for object detection datasets. Annotations for our dataset follow the PASCAL VOC XML format, which is a very popular format. 
  
  ```bash
  python convert.py
