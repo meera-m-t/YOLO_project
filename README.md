@@ -22,3 +22,6 @@ unzip culvert-dataset.zip
  ```bash
  python convert.py
  ```
+## Partition the Dataset
+We partition the dataset into train, validation, and test sets containing 80%, 10%, and 10% of the data, respectively. You can change the split values according to your convenience. See ``Partition.ipynb``
+
