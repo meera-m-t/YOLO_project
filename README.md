@@ -60,7 +60,10 @@ python val.py --img 200 --weights runs/train/yolo_culvert_det/weights/best.pt --
 
 ```
 ## Show some results 
+### A batch of images
+![model](val_batch0_labels.jpg)
 
-![model](val_batch0_labels.jpg) ![model](val_batch0_pred.jpg)
+### A predicted batch images
+![model](val_batch0_pred.jpg)
 
 
