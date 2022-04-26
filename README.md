@@ -28,6 +28,11 @@ We partition the dataset into train, validation, and test sets containing 80%, 1
 ```bash
 unzip TRAIN-VAL-TEST.zip
 ```
+Rename the annotations folder to labels, as this is where YOLO v5 expects the annotations to be located in.
+
+```bash
+mv annotations labels
+```
 
 ## Set up the yolov5 code
 Recommend you create a new conda  environment to run your YOLO v5 experiments as to not mess up dependencies of any existing project. 
@@ -35,7 +40,28 @@ Recommend you create a new conda  environment to run your YOLO v5 experiments as
 git clone https://github.com/ultralytics/yolov5
 cd yolov5
 pip install -r requirements.txt
+cd ../yolov5 
 ```
+create in `yolov5/data`  a new file called culvert.yaml
+
+### Hyperparameter Config File
+The hyperparameter config file helps us define the hyperparameters for our neural network. We are going to use the default one, `data/hyp.scratch.yaml`
+
+## Train the Model
+To train the model run:
+```bash
+python train.py --img 200 --cfg yolov5s.yaml --hyp hyp.scratch.yaml --batch 32 --epochs 100 --data culvert.yaml --weights yolov5s.pt --workers 1 --name yolo_culvert_det
+```
+You can upload the trained model from [here]()
+
+## Test the model
+To test your model run:
+```bash
+python val.py --img 200 --weights runs/train/yolo_culvert_det/weights/best.pt --data culvert.yaml --task test --name yolo_det
+
+```
+## Show results
+
 
 
 
