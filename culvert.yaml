@@ -1,0 +1,9 @@
+train: ../culvert-dataset/images/train/ 
+val:  ../culvert-dataset/images/val/
+test: ../culvert-dataset/images/test/
+
+# number of classes
+nc: 2
+
+# class names
+names: ["False","True"]
