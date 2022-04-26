@@ -61,6 +61,6 @@ python val.py --img 200 --weights runs/train/yolo_culvert_det/weights/best.pt --
 ```
 ## Show some results 
 
-![model](model.png) ![model](model.png)
+![model](val_batch0_labels.jpg) ![model](val_batch0_pred.jpg)
 
 
