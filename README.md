@@ -51,7 +51,7 @@ To train the model run:
 ```bash
 python train.py --img 200 --cfg yolov5s.yaml --hyp hyp.scratch.yaml --batch 32 --epochs 100 --data culvert.yaml --weights yolov5s.pt --workers 1 --name yolo_culvert_det
 ```
-You can upload the trained model from [here](https://www.dropbox.com/s/gy7v7fzoywjyd62/runs.zip?dl=0)
+You can upload the trained model from [here](https://www.dropbox.com/s/raow5zvps49qyon/runs%20%281%29.zip?dl=0)
 
 ## Test the model
 To test your model run:
