@@ -40,9 +40,8 @@ Recommend you create a new conda  environment to run your YOLO v5 experiments as
 git clone https://github.com/ultralytics/yolov5
 cd yolov5
 pip install -r requirements.txt
-cd ../yolov5 
 ```
-create in `yolov5/data`  a new file called culvert.yaml
+create in `yolov5/data`  a new file called `culvert.yaml`
 
 ### Hyperparameter Config File
 The hyperparameter config file helps us define the hyperparameters for our neural network. We are going to use the default one, `data/hyp.scratch.yaml`
@@ -52,7 +51,7 @@ To train the model run:
 ```bash
 python train.py --img 200 --cfg yolov5s.yaml --hyp hyp.scratch.yaml --batch 32 --epochs 100 --data culvert.yaml --weights yolov5s.pt --workers 1 --name yolo_culvert_det
 ```
-You can upload the trained model from [here]()
+You can upload the trained model from [here](https://www.dropbox.com/s/gy7v7fzoywjyd62/runs.zip?dl=0)
 
 ## Test the model
 To test your model run:
@@ -60,8 +59,8 @@ To test your model run:
 python val.py --img 200 --weights runs/train/yolo_culvert_det/weights/best.pt --data culvert.yaml --task test --name yolo_det
 
 ```
-## Show results
+## Show some results 
 
-
+![model](model.png) ![model](model.png)
 
 
